@@ -1,0 +1,9 @@
+Package: additivityTests
+Type: Package
+Title: Additivity tests in the two way ANOVA with single sub-class numbers
+Version: 0.3
+Date: 2007-10-30
+Author: Marie Simeckova
+Maintainer: Petr Simecek <simecek@gmail.com>
+Description: Implementation of the Tukey, Mandel, Johnson-Graybill, LBI, Tussel and modified Tukey non-additivity test
+License: GPL>=2.0
