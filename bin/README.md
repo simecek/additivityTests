@@ -1,6 +1,4 @@
-
-Binary files
-=========================
+## Binary files
 
 This directory is now *obsolete* and *depriciated*. Use devtools to install the package directly from Github.
 
