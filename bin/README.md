@@ -1,8 +1,8 @@
-## Binary files
+# Binary files
 
 This directory is now *obsolete* and *depriciated*. Use devtools to install the package directly from Github.
 
-# Files in this directory:
+## Files in this directory:
 
 1) additivityTests.zip (for MS Windows)
 
