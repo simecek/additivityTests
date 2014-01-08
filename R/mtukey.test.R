@@ -94,7 +94,7 @@ mtukey.test<-function(Y,alpha=0.05,correction=0,Nboot=1000)
   if (correction==1)
   {
 
-     boot<-replicate(Nboot,p.test(exp+sample(err,n. a*n.b, replace=FALSE)))
+     boot<-replicate(Nboot,p.test(exp+sample(err,n.a*n.b, replace=FALSE)))
      B<-apply(boot,1,quantile,probs=1-alpha)
 
      out<-list(result=ppp[1]>B[1],stat=ppp[1],critical.value=B[1],alpha=alpha,name="Modified Tukey test (small sample size correction, type 1)")

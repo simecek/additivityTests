@@ -6,7 +6,7 @@
     Nboot = 1000)
 }
 \arguments{
-  \item{data}{data matrix}
+  \item{Y}{data matrix}
 
   \item{alpha}{level of the test}
 
