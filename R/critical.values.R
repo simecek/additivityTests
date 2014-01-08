@@ -1,11 +1,31 @@
+#' Critical Values for the Johnson-Graybill, LBI and Tussel tests
+#' 
+#' Compute the critical values by performing N simulation.
+#'
+#' @param a number of rows
+#' @param b number of columns
+#' @param N number of simulations
+#' @param alpha level(s) of the test
+#'
+#' @return A list containing three components: critical values for Johnson-Graybill, LBI and Tussel tests, respectively.
+#'
+#' @seealso \code{\link{johnson.graybill.test}}, \code{\link{lbi.test}}, \code{\link{tussel.test}}
+#' 
+#' @keywords htest
+#'
+#' @export
+#' 
+#' @examples
+#' data(Boik)
+#' critical.values(nrow(Boik), ncol(Boik), 0.01) 
+
 `critical.values` <-
-function(a,b,N=100000,alpha=0.05)  
+function(a, b, N=100000, alpha=0.05)  
 {
 
   t1<-t2<-t3<-NULL
   p<-a-1
   q<-b-1
-
 
   for (i in 1:N)
   {

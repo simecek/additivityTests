@@ -1,0 +1,8 @@
+export(critical.values)
+export(johnson.graybill.test)
+export(lbi.test)
+export(mandel.test)
+export(mtukey.test)
+export(print.aTest)
+export(tukey.test)
+export(tussel.test)

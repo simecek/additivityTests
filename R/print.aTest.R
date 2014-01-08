@@ -1,3 +1,18 @@
+#' Print aTest object
+#' 
+#' Print the results of additivity test.
+#'
+#' @param x aTest object
+#' 
+#' @keywords internal
+#'
+#' @export
+#' 
+#' @examples
+#' data(Boik)
+#' t <- tukey.test(Boik)
+#' print(t) 
+
 print.aTest<-function(x,...)
 {
 cat(paste('\n',x$name,' on ',x$alpha*100,'% alpha-level:\n\n',sep=""));

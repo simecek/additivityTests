@@ -1,24 +1,32 @@
 \name{critical.values}
 \alias{critical.values}
 \title{Critical Values for the Johnson-Graybill, LBI and Tussel tests}
-\description{Compute the critical values by performing N simulation.}
 \usage{
-critical.values(a, b, N = 1e+05, alpha = 0.05)
+  critical.values(a, b, N = 1e+05, alpha = 0.05)
 }
 \arguments{
   \item{a}{number of rows}
+
   \item{b}{number of columns}
+
   \item{N}{number of simulations}
+
   \item{alpha}{level(s) of the test}
 }
 \value{
-A list containing three components: critical values for Johnson-Graybill, LBI and Tussel tests, respectively.
+  A list containing three components: critical values for
+  Johnson-Graybill, LBI and Tussel tests, respectively.
+}
+\description{
+  Compute the critical values by performing N simulation.
 }
 \examples{
-  data(Boik)
-  critical.values(nrow(Boik),ncol(Boik),0.01) 
+data(Boik)
+critical.values(nrow(Boik), ncol(Boik), 0.01)
 }
 \seealso{
-\code{\link{johnson.graybill.test}}, \code{\link{lbi.test}}, \code{\link{tussel.test}}
+  \code{\link{johnson.graybill.test}},
+  \code{\link{lbi.test}}, \code{\link{tussel.test}}
 }
 \keyword{htest}
+

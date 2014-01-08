@@ -1,9 +1,20 @@
 Package: additivityTests
 Type: Package
 Title: Additivity tests in the two way ANOVA with single sub-class numbers
-Version: 0.3
-Date: 2007-10-30
+Version: 0.9.1
+Date: 2014-01-08
 Author: Marie Simeckova [aut], Thomas Rusch [aut], Petr Simecek [cre]
 Maintainer: Petr Simecek <simecek@gmail.com>
-Description: Implementation of the Tukey, Mandel, Johnson-Graybill, LBI, Tussel and modified Tukey non-additivity test
-License: GPL>=2.0
+Description: Implementation of the Tukey, Mandel, Johnson-Graybill, LBI, Tussel
+    and modified Tukey non-additivity tests.
+License: GPL-3
+Collate:
+    'critical.values.R'
+    'johnson.graybill.test.R'
+    'lbi.test.R'
+    'mandel.test.R'
+    'mtukey.test.R'
+    'print.aTest.R'
+    'tukey.test.R'
+    'tussel.test.R'
+    'additivityTests-package.R'

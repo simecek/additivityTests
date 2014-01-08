@@ -1,5 +1,34 @@
+#' Tukey Additivity Test
+#' 
+#' Test for an interaction in two-way ANOVA table by the Tukey test.
+#'
+#' @param data data matrix
+#' @param alpha level of the test
+#' @param critical.value result of \code{\link{critical.values}} function, see \code{Details}
+#'
+#' @return A list with class "\code{aTest}" containing the following components: 
+#' test statistics \code{stat}, critical value \code{critical.value} and the result of 
+#' the test \code{result}, i.e. whether the additivity hypothesis has been rejected.
+#'
+#' @details The critical value can be computed in advance and given in the parameter \code{critical value}. 
+#' If not a function  \code{\link{critical.values}} is called to do that.
+#' 
+#' @references Tukey, J.W.: One Degree of Freedom for Non-additivity, \emph{Biometrics} \bold{5}, 
+#' pp. 232--242, 1949.
+#' 
+#' @seealso \code{\link{tussel.test}}, \code{\link{mtukey.test}}, \code{\link{mandel.test}}, 
+#' \code{\link{lbi.test}}, \code{\link{johnson.graybill.test}}
+#' 
+#' @keywords htest
+#'
+#' @export
+#' 
+#' @examples
+#' data(Boik)
+#' tukey.test(Boik)
+
 `tukey.test` <-
-function(data,alpha=0.05,critical.value=NA) {
+function(data, alpha=0.05, critical.value=NA) {
 # Mandel test of additivity in two-way ANOVA
 # In rows is factor A (fixed factor), in columns factor B (random)
 
