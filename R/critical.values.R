@@ -43,5 +43,5 @@ function(a, b, N=100000, alpha=0.05)
     t3<-c(t3,prod(vl.cisla[1:p]))
   }
 
-  return(list(t1=quantile(t1,1-alpha),t2=quantile(t2,alpha),t3=quantile(t3,alpha),alpha=alpha))
+  return(list(t1=quantile(t1,1-alpha),t2=quantile(t2,1-alpha),t3=quantile(t3,alpha),alpha=alpha))
 }
