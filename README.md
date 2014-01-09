@@ -1,6 +1,54 @@
 # additivityTests
 
-additivityTests is R package for additivity tests in the two way ANOVA with just one observation per cell
+additivityTests is R package for additivity tests in the two way ANOVA with just one observation per cell.
+
+## Introduction
+
+In many applications of statistical methods, it is assumed that the response
+variable is a sum of several factors and a random noise. In a real world this may
+not be an appropriate model. For example, some patients may react diﬀerently
+to the same drug treatment or the inﬂuence of fertilizer may be inﬂuenced
+by the type of a soil. There might exist an interaction between factors. 
+
+If there is more than one observation per cell then standard ANOVA techniques
+may be applied. Unfortunately, in many cases it is infeasible to get
+more than one observation taken under the same conditions. For instance, it
+is not logical to ask the same student the same question twice.
+
+Six tests of additivity hypothesis (under various alternatives) are included in this package: 
+Tukey test, modified Tukey test, Johnson-Graybill test, LBI test, Mandel test and Tussel test.
+
+## Example
+
+Let us generate 10 random subjects, 10 random treatmeants and combine them into a dataset (with no interaction):
+
+    set.seed(123)
+    subjects = rnorm(10)
+    treatments = rnorm(10)
+    noise = rnorm(100)/100
+    Y = matrix(rep(subjects,10), 10, 10) + matrix(rep(treatments, each=10), 10, 10) + noise
+
+The tests should **not** reject the additive hypothesis: 
+
+    tukey.test(Y)
+    mandel.test(Y)
+    lbi.test(Y)
+    tussel.test(Y)
+    johnson.graybill.test(Y)
+    mandel.test(Y)
+    mtukey.test(Y, correction=2, Nboot=1000)
+    
+Now, the extra effect will be added to the last 5 subjects. The tests **should** reject the additive hypothesis:   
+    
+    Y[1:5,] = Y[1:5,] + 10*rep(treatments, each=5)
+    
+    tukey.test(Y)
+    mandel.test(Y)
+    lbi.test(Y)
+    tussel.test(Y)
+    johnson.graybill.test(Y)
+    mandel.test(Y)
+    mtukey.test(Y, correction=2, Nboot=1000)
 
 ## References
 
@@ -10,8 +58,10 @@ Rasch, Dieter, et al. "Tests of additivity in mixed and fixed effect two-way ANO
 
 ## Installation
 
-To install the additivityTests, it's easiest to use the `devtools` package:
+To install the additivityTests from Github, it's easiest to use the `devtools` package:
 
     # install.packages("devtools")
     library(devtools)
     install_github("rakosnicek/additivityTests")
+
+Or you can access the stable package version available on [[CRAN]](http://cran.r-project.org/web/packages/additivityTests/)
