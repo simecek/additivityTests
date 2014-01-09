@@ -1,7 +1,7 @@
 Package: additivityTests
 Type: Package
 Title: Additivity tests in the two way ANOVA with single sub-class numbers
-Version: 1.0.0
+Version: 1.1-0
 Date: 2014-01-08
 Author: Marie Simeckova [aut], Thomas Rusch [aut], Petr Simecek [cre]
 Maintainer: Petr Simecek <simecek@gmail.com>
