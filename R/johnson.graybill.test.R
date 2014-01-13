@@ -18,7 +18,7 @@
 #' \emph{Journal of the American Statistical Association} \bold{67}, pp.  862--868, 1972.
 #' 
 #' @seealso \code{\link{tukey.test}}, \code{\link{mtukey.test}}, \code{\link{mandel.test}}, 
-#' \code{\link{lbi.test}}, \code{\link{tussel.test}}
+#' \code{\link{lbi.test}}, \code{\link{tusell.test}}
 #' 
 #' @keywords htest
 #'

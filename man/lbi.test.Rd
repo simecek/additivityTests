@@ -47,7 +47,7 @@ lbi.test(Boik)
   \code{\link{tukey.test}}, \code{\link{mtukey.test}},
   \code{\link{mandel.test}},
   \code{\link{johnson.graybill.test}},
-  \code{\link{tussel.test}}
+  \code{\link{tusell.test}}
 }
 \keyword{htest}
 

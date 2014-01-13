@@ -18,7 +18,7 @@
 #' \emph{Journal of Applied Statistics} \bold{20},pp. 41--55, 1993.
 #' 
 #' @seealso \code{\link{tukey.test}}, \code{\link{mtukey.test}}, \code{\link{mandel.test}}, 
-#' \code{\link{johnson.graybill.test}}, \code{\link{tussel.test}}
+#' \code{\link{johnson.graybill.test}}, \code{\link{tusell.test}}
 #' 
 #' @keywords htest
 #'

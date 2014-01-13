@@ -46,7 +46,7 @@ johnson.graybill.test(Boik)
 \seealso{
   \code{\link{tukey.test}}, \code{\link{mtukey.test}},
   \code{\link{mandel.test}}, \code{\link{lbi.test}},
-  \code{\link{tussel.test}}
+  \code{\link{tusell.test}}
 }
 \keyword{htest}
 

@@ -16,7 +16,7 @@ more than one observation taken under the same conditions. For instance, it
 is not logical to ask the same student the same question twice.
 
 Six tests of additivity hypothesis (under various alternatives) are included in this package: 
-Tukey test, modified Tukey test, Johnson-Graybill test, LBI test, Mandel test and Tussel test.
+Tukey test, modified Tukey test, Johnson-Graybill test, LBI test, Mandel test and Tusell test.
 
 ## Example
 
@@ -33,7 +33,7 @@ The tests should **not** reject the additive hypothesis:
     tukey.test(Y)
     mandel.test(Y)
     lbi.test(Y)
-    tussel.test(Y)
+    tusell.test(Y)
     johnson.graybill.test(Y)
     mandel.test(Y)
     mtukey.test(Y, correction=2, Nboot=1000)
@@ -45,7 +45,7 @@ Now, the extra effect will be added to the last 5 subjects. The tests **should**
     tukey.test(Y)
     mandel.test(Y)
     lbi.test(Y)
-    tussel.test(Y)
+    tusell.test(Y)
     johnson.graybill.test(Y)
     mandel.test(Y)
     mtukey.test(Y, correction=2, Nboot=1000)

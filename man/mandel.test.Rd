@@ -41,7 +41,7 @@ mandel.test(Boik)
 \seealso{
   \code{\link{tukey.test}}, \code{\link{mtukey.test}},
   \code{\link{johnson.graybill.test}},
-  \code{\link{lbi.test}}, \code{\link{tussel.test}}
+  \code{\link{lbi.test}}, \code{\link{tusell.test}}
 }
 \keyword{htest}
 

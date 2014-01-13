@@ -38,7 +38,7 @@ tukey.test(Boik)
   \emph{Biometrics} \bold{5}, pp. 232--242, 1949.
 }
 \seealso{
-  \code{\link{tussel.test}}, \code{\link{mtukey.test}},
+  \code{\link{tusell.test}}, \code{\link{mtukey.test}},
   \code{\link{mandel.test}}, \code{\link{lbi.test}},
   \code{\link{johnson.graybill.test}}
 }

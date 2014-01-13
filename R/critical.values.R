@@ -1,4 +1,4 @@
-#' Critical Values for the Johnson-Graybill, LBI and Tussel tests
+#' Critical Values for the Johnson-Graybill, LBI and Tusell tests
 #' 
 #' Compute the critical values by performing N simulation.
 #'
@@ -7,9 +7,9 @@
 #' @param N number of simulations
 #' @param alpha level(s) of the test
 #'
-#' @return A list containing three components: critical values for Johnson-Graybill, LBI and Tussel tests, respectively.
+#' @return A list containing three components: critical values for Johnson-Graybill, LBI and Tusell tests, respectively.
 #'
-#' @seealso \code{\link{johnson.graybill.test}}, \code{\link{lbi.test}}, \code{\link{tussel.test}}
+#' @seealso \code{\link{johnson.graybill.test}}, \code{\link{lbi.test}}, \code{\link{tusell.test}}
 #' 
 #' @keywords htest
 #'
@@ -39,7 +39,7 @@ function(a, b, N=100000, alpha=0.05)
     t1<-c(t1,vl.cisla[1])
     # LBI test 
     t2<-c(t2,sum(vl.cisla^2))
-    # Tussel test
+    # Tusell test
     t3<-c(t3,prod(vl.cisla[1:p]))
   }
 

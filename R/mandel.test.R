@@ -18,7 +18,7 @@
 #' pp. 878--888, 1961.
 #' 
 #' @seealso \code{\link{tukey.test}}, \code{\link{mtukey.test}}, \code{\link{johnson.graybill.test}}, 
-#' \code{\link{lbi.test}}, \code{\link{tussel.test}}
+#' \code{\link{lbi.test}}, \code{\link{tusell.test}}
 #' 
 #' @keywords htest
 #'
