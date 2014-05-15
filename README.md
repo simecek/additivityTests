@@ -63,7 +63,7 @@ To install the additivityTests from Github, it's easiest to use the `devtools` p
 ```S
     # install.packages("devtools")
     library(devtools)
-    install_github("rakosnicek/additivityTests")
+    install_github("simecek/additivityTests")
 ```    
 
 Or you can access the stable package version available on [[CRAN]](http://cran.r-project.org/web/packages/additivityTests/)
