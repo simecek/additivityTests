@@ -9,7 +9,6 @@
 #'
 #' @export
 #' 
-#' @S3method print aTest
 #' @method print aTest
 #' 
 #' @return \code{NULL}
